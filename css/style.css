@@ -1,3 +1,102 @@
-h2 {
-	color: red;
+section {
+	background-image: url("../images/pitch.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	overflow: hidden;
+}
+.container {
+	width: 1165px;
+	margin: 0 auto;
+}
+h1 {
+	width: 400px;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	position: relative;
+	left: 50%;
+	transform: translate( -50%, 50%);
+	color: #C07F00;
+	background-color: #4C3D3D;
+	padding-left: 25px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 18px -1px rgba(255,247,212,1);
+}
+h1:hover {
+	animation: logo 1s infinite alternate;
+	cursor: default;
+}
+@keyframes logo {
+	from {transform: translate(-50%, 50%);}
+	to {transform: translate(-50%, 30%);}
+}
+.dm {
+	position: relative;
+	width: 150px;
+	display: inline-block;
+	animation: draco 10s 2s infinite;
+}
+
+@keyframes draco {
+	0% {top: 0; left: 0px}
+	25% {top: 400px; left: 0px;transform:rotate(45deg); }
+	50% {top: 400px; left: 900px; transform:rotate(25deg);}
+	75% {top: 0; left: 900px; transform: scaleX(-1);}
+	100% {top: 0; left: 0px; transform: scaleX(1);}	
+}
+.hp {
+	display: block;
+	width: 150px;
+	position: relative;
+	animation: ani 10s 1.5s infinite ;
+}
+@keyframes ani {
+	0% {top: 0; left: 0px}
+	25% {top: 250px; left: 0px;transform:rotate(45deg); }
+	50% {top: 250px; left: 900px; transform:rotate(25deg);}
+	75% {top: 0; left: 900px; transform: scaleX(-1);}
+	100% {top: 0; left: 0px; transform: scaleX(1);}	
+}
+
+.gs {
+	display: block;
+	width: 100px;
+	position: relative;
+	animation: snitch 10s infinite ;
+}
+@keyframes snitch {
+	0% {top: 0; left: 0px}
+	25% {top: 100px; left: 0px;transform:rotate(45deg); }
+	50% {top: 100px; left: 900px; transform: rotate(25deg);}
+	75% {top: -150px; left: 900px; transform: scaleX(-1);}
+	90% {top: -150px; left: 0px; transform: scaleX(1.0);}
+	100% {top: 0px; left: 0px; transform: scaleX(1.0);}
+}
+.rw {
+	display: inline-block;
+	width: 200px;
+	position: relative;
+	top: -150px;
+	left: 450px;
+	animation: rw 1s infinite alternate;
+}
+@keyframes rw {
+	from {top: -250px; left: 450px;}
+	to {top: -270px;}
+}
+
+.rw:hover {
+	position: relative;
+	top: 1000px;
+	animation: weasley 6s;
+}
+
+@keyframes weasley {
+	from {top: -300px; left: 450px;}
+	to {top: 1000px; left: 450px; transform: rotate(180deg);}
 }
